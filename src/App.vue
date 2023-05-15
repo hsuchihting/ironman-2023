@@ -59,16 +59,37 @@ export default {
     routerPath() {
       const articleList = [
         {
-          text: "可以搜尋的下拉選單",
+          text: "下拉選單",
         },
         {
-          text: "卡片彈窗",
+          text: "卡片元件與彈窗",
         },
         {
-          text: "目錄按鈕對應圖片",
+          text: "可搜尋資料的欄位",
         },
         {
-          text: "假日呈現不同顏色",
+          text: "多個複選框",
+        },
+        {
+          text: "多個條件回傳值來判斷",
+        },
+        {
+          text: "假日顯示不同顏色",
+        },
+        {
+          text: "陣列重組",
+        },
+        {
+          text: "重組資料",
+        },
+        {
+          text: "多筆資料組合",
+        },
+        {
+          text: "分頁",
+        },
+        {
+          text: "基本後台版型",
         },
       ];
       const menuList = [];

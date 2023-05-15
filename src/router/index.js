@@ -9,7 +9,6 @@ for (let i = 1; i <= 30; i++) {
   };
   routes.push(route);
 }
-console.log(routes);
 
 const router = createRouter({
   history: createWebHistory(),
