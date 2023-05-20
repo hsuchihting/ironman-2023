@@ -91,6 +91,9 @@ export default {
         {
           text: "基本後台版型",
         },
+        {
+          text: "倒數計時",
+        },
       ];
       const menuList = [];
       for (let i = 1; i <= articleList.length; i++) {
