@@ -43,7 +43,7 @@
         <tbody>
           <tr
             class="border-b-2 border-b-gray-300"
-            v-for="item in typeFilter"
+            v-for="item in filterUser"
             :key="item.login.uuid"
           >
             <td>
@@ -91,13 +91,26 @@ export default {
     };
   },
   computed: {
+    // 下拉選單篩選
     typeFilter() {
-      if (this.input.type === "all") {
-        return this.users;
-      } else {
+      if (this.input.type !== "all") {
         return this.users.filter((item) => {
           return item.gender === this.input.type;
         });
+      } else {
+        return this.users;
+      }
+    },
+    // 文字輸入篩選
+    filterUser() {
+      if (this.input.text) {
+        return this.typeFilter.filter((item) => {
+          const dataName = item.name.first.toLowerCase();
+          const filterText = this.input.text.toLowerCase();
+          return dataName.indexOf(filterText) !== -1;
+        });
+      } else {
+        return this.typeFilter;
       }
     },
   },
