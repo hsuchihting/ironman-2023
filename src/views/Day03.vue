@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2 class="tracking-wide font-bold text-2xl text-red-600 mb-4">
+    <h2 class="text-3xl text-red-600 font-bold my-4">
       Filter Input
     </h2>
 

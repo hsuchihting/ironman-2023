@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2 class="my-4 text-2xl font-bold">下拉選單與搜尋對應列表</h2>
+    <h2 class="text-3xl text-red-600 font-bold my-4">Select</h2>
     <div class="grid lg:grid-cols-2 gap-2">
       <div class="w-full">
         <h3 class="capitalize my-4">forEach select</h3>
